@@ -4,7 +4,7 @@
 ## VERSION: 1
 ## RELEASE DATE: 09-27-2024
 
-Simple SQLite Database Manager built with Flask. 
+Simple SQLite Database Manager for Linux built with Flask. 
 
 - It allows users to interact with SQLite databases
 - List tables
