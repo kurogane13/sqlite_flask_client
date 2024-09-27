@@ -1,0 +1,24 @@
+SELECT * FROM packages LIMIT 8;
+SELECT * FROM packages LIMIT 1;
+SELECT * FROM packages LIMIT 10;
+SELECT * FROM packages LIMIT 2;
+SELECT * FROM packages LIMIT 3;
+SELECT * FROM packages;
+SELECT column1, column2 FROM packages;
+SELECT DISTINCT column_name FROM packages;
+SELECT * FROM packages WHERE column1 = 'value';
+SELECT * FROM packages WHERE column_name BETWEEN 10 AND 20;
+SELECT * FROM packages WHERE column_name LIKE 'A%';
+SELECT * FROM packages WHERE column1 = 'value' AND column2 > 50;
+SELECT * FROM packages WHERE column_name IN ('value1', 'value2');
+SELECT COUNT(*) FROM packages;
+SELECT COUNT(column_name) FROM packages WHERE column_name = 'value';
+SELECT SUM(column_name) FROM packages;
+SELECT AVG(column_name) FROM packages;
+SELECT MAX(column_name) FROM packages;
+SELECT MIN(column_name) FROM packages;
+SELECT column_name, COUNT(*) FROM packages GROUP BY column_name;
+SELECT column_name, COUNT(*) FROM packages GROUP BY column_name HAVING COUNT(*) > 1;
+
+
+SELECT * FROM packages LIMIT 20;

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQLite Database Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">SQLite Database Manager</h1>
+
+        <!-- Database Path Input -->
+        <div class="card my-3 db-path-card">
+            <div class="card-body">
+                <label for="db-path" class="form-label db-path-label"><h5>Provide a new valid SQlite Database file</h5></label>
+                <input type="text" id="db-path" class="form-control db-path-input" placeholder="/path/to/database.db">
+                <button class="btn growing-effect-btn mt-2 use-db-file-btn">Use New db file</button>
+				<button class="btn growing-effect-btn mt-2" id="list-tables-dbpath-btn">List Tables - new db file</button>
+            </div>
+        </div>
+
+        <!-- Saved Database Paths with Dropdown Menu -->
+        <div class="card my-3 saved-paths-card">
+            <div class="card-body">
+                <h5>Saved SQlite Databases Files</h5>
+                <select id="saved-paths-dropdown" class="form-select saved-paths-dropdown my-2">
+                    <option value="" disabled selected>Select a saved db</option>
+                </select>
+                <button class="btn growing-effect-btn mt-2 select-saved-db-btn">Use saved db file</button>
+                <button class="btn growing-effect-btn mt-2" id="list-tables-savedpath-btn">List Tables - saved db file</button>
+            </div>
+        </div>
+
+        <!-- Tables Section -->
+        <div class="card my-3 tables-card">
+            <div class="card-body">
+                <h5>Database Tables will be shown here</h5>
+                <ul id="table-list" class="list-group table-list"></ul>
+            </div>
+        </div>
+
+        <!-- Query Section -->
+        <div class="card my-3 query-card">
+            <div class="card-body">
+                <h5>Run New SQL Query</h5>
+                <textarea id="custom-query" class="form-control query-textarea" rows="3" placeholder="e.g., SELECT * FROM users"></textarea>
+                <button class="btn btn-success mt-3" id="run-query-btn">Run new Query</button>
+            </div>
+        </div>
+        
+        <!-- Saved Queries Section -->
+		<div class="card my-3 saved-queries-card">
+			<div class="card-body">
+				<h5>Run Saved SQL Query</h5>
+				<select id="saved-queries-dropdown" class="form-select saved-queries-dropdown my-2">
+					<option value="" disabled selected>Select a saved query</option>
+				</select>
+				<button class="btn btn-success mt-2" id="run-saved-query-btn">Run Saved Query</button>
+			</div>
+		</div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    <div id="terminal" class="console">Output will appear here...</div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+/* Global Styles */
+body {
+    background-color: #121212;  /* Dark background color */
+    color: #e0e0e0;  /* Light text color for contrast */
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ffffff;  /* White color for the header */
+}
+
+.card {
+    background-color: #1e1e1e;  /* Darker background for cards */
+    border: 1px solid #444;  /* Subtle border for cards */
+    border-radius: 8px;
+}
+
+.card-body {
+    color: #e0e0e0;  /* Light text color in cards */
+}
+
+.form-label {
+    color: #ffffff;  /* White color for form labels */
+}
+
+/* Growing effect buttons */
+.growing-effect-btn {
+    background-color: cyan;       /* Default background color */
+    color: black;                 /* Default text color */
+    padding: 10px 20px;           /* Add some padding */
+    border: none;                 /* Remove borders */
+    border-radius: 5px;           /* Rounded corners */
+    font-size: 16px;              /* Font size for readability */
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;  /* Smooth transition for effects */
+}
+
+.growing-effect-btn:hover {
+    transform: scale(1.1);        /* Grow the button slightly */
+    background-color: black;      /* Change background to black */
+    color: white;                 /* Change text color to white */
+    cursor: pointer;              /* Show pointer on hover */
+}
+
+/* Additional margin for spacing */
+.mt-2 {
+    margin-top: 10px;
+}
+
+/* Input Styles */
+input.form-control,
+textarea.query-textarea {
+    background-color: black;  /* Dark input background */
+    color: white;  /* Light text color for input */
+    border: 1px solid #555;  /* Lighter border for inputs */
+    font-weight: bold;  /* Bold text */
+}
+
+/* Placeholder Styles */
+input.form-control::placeholder,
+textarea.query-textarea::placeholder {
+    color: white;  /* White text for placeholder */
+    font-weight: bold;  /* Bold placeholder text */
+}
+
+/* Input focus behavior */
+input.form-control:focus,
+textarea.query-textarea:focus {
+    background-color: black;  /* Keep background color on focus */
+    color: white;  /* Keep text color on focus */
+    border-color: #777;  /* Optional: change border color slightly on focus */
+    outline: none;  /* Remove the default outline */
+}
+
+input.form-control:focus::placeholder,
+textarea.query-textarea:focus::placeholder {
+    color: white;  /* Keep the placeholder color white */
+}
+
+/* Saved Queries Dropdown and Saved Paths Dropdown */
+.saved-queries-dropdown,
+.saved-paths-dropdown {
+    background-color: black;  /* Black background for dropdown */
+    color: white;  /* White text for dropdown */
+    border: 1px solid #555;  /* Border color for dropdown */
+    font-weight: bold;  /* Bold text for dropdown */
+    padding: 10px;  /* Padding for a better appearance */
+    border-radius: 4px;  /* Slightly rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease;  /* Smooth transition */
+}
+
+/* Dropdown options styling */
+.saved-queries-dropdown option,
+.saved-paths-dropdown option {
+    background-color: black;  /* Black background for options */
+    color: white;  /* White text for options */
+}
+
+/* Focus state when dropdown is selected */
+.saved-queries-dropdown:focus,
+.saved-paths-dropdown:focus {
+    background-color: black;  /* Keep background color on focus */
+    color: white;  /* Keep text color on focus */
+    border-color: #777;  /* Lighter border on focus */
+    outline: none;  /* Remove default outline */
+}
+
+/* Dropdown hover effect */
+.saved-queries-dropdown:hover,
+.saved-paths-dropdown:hover {
+    background-color: #333;  /* Darker background on hover */
+    color: white;  /* Ensure text remains white on hover */
+}
+
+/* Button Styles */
+.use-db-file-btn {
+    background-color: #007bff;  /* Bootstrap primary color */
+    color: #ffffff;  /* White text for buttons */
+}
+
+.use-db-file-btn:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+}
+
+.select-saved-db-btn {
+    background-color: #28a745;  /* Green color for 'Select a saved database file' button */
+    color: #ffffff;  /* White text for buttons */
+}
+
+.select-saved-db-btn:hover {
+    background-color: #218838;  /* Darker green on hover */
+}
+
+/* Console Styles */
+.console {
+    width: 100%;
+    height: 800px;
+    background-color: #000;  /* Black background for console */
+    color: #ffffff;  /* white text for console */
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    overflow-y: auto;
+    border: 2px solid #222;  /* Slight border for the console */
+}
+
+/* Table list styles */
+#table-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#table-list li {
+    background-color: #333;
+    color: #ffffff;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Textarea for custom query */
+.query-textarea {
+    background-color: black;  /* Black background */
+    color: white;  /* White text */
+    border: 1px solid #ccc;  /* Optional: customize the border */
+    padding: 10px;  /* Optional: adjust padding for better appearance */
+    font-size: 14px;  /* Optional: adjust the font size */
+    resize: none;  /* Disable resizing */
+}

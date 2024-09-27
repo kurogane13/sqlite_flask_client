@@ -1,0 +1,3 @@
+/home/gus/Downloads/other_db.sqlite
+/home/gus/Downloads/primary_db.sqlite
+/home/gus/sqlite3_flask/filelists_db.sqlite
