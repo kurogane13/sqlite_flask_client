@@ -31,7 +31,7 @@ Simple SQLite Database Manager for Linux built with Flask.
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/sqlite_flask_client.git
+   git clone https://github.com/kurogane13/sqlite_flask_client.git
    cd sqlite_flask_client
 
 2. **Create and activate a python venv:**
